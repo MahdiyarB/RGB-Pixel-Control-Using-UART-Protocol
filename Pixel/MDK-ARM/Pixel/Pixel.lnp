@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"pixel\startup_stm32f103xb.o"
+"pixel\main.o"
+"pixel\gpio.o"
+"pixel\tim.o"
+"pixel\usart.o"
+"pixel\stm32f1xx_it.o"
+"pixel\stm32f1xx_hal_msp.o"
+"pixel\stm32f1xx_hal_gpio_ex.o"
+"pixel\stm32f1xx_hal_tim.o"
+"pixel\stm32f1xx_hal_tim_ex.o"
+"pixel\stm32f1xx_hal.o"
+"pixel\stm32f1xx_hal_rcc.o"
+"pixel\stm32f1xx_hal_rcc_ex.o"
+"pixel\stm32f1xx_hal_gpio.o"
+"pixel\stm32f1xx_hal_dma.o"
+"pixel\stm32f1xx_hal_cortex.o"
+"pixel\stm32f1xx_hal_pwr.o"
+"pixel\stm32f1xx_hal_flash.o"
+"pixel\stm32f1xx_hal_flash_ex.o"
+"pixel\stm32f1xx_hal_exti.o"
+"pixel\stm32f1xx_hal_uart.o"
+"pixel\system_stm32f1xx.o"
+--strict --scatter "Pixel\Pixel.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Pixel.map" -o Pixel\Pixel.axf
